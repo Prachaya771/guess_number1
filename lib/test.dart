@@ -4,7 +4,6 @@ import 'dart:math';
 void main() {
   var i = 0;
   var r = Random();
-  dynamic c;
 
   var answer = r.nextInt(10);
 
@@ -14,7 +13,6 @@ void main() {
     var input = stdin.readLineSync();
     var guess = int.tryParse(input!);
     if (guess == answer) {
-      c = guess;
       print('you guessed right');
       break;
     } else {
